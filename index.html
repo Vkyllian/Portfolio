@@ -32,7 +32,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: var(--ff-body);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     min-height: 100vh;
     overflow-x: hidden;
@@ -294,7 +294,7 @@
 
   .section-tag {
     font-family: var(--ff-mono);
-    font-size: 11px;
+    font-size: 13px;
     color: var(--amber);
     letter-spacing: .14em;
     text-transform: uppercase;
@@ -367,7 +367,7 @@
   }
 
   .skill-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--muted);
     line-height: 1.75;
     margin-bottom: 1.25rem;
@@ -397,7 +397,7 @@
   }
 
   .project-item {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--muted);
     padding: .3rem 0;
     display: flex;
@@ -694,7 +694,7 @@
     opacity: .8;
   }
   .star-text {
-    font-size: 12.5px;
+    font-size: 15px;
     color: var(--muted);
     line-height: 1.65;
   }
@@ -735,7 +735,7 @@
         <span>Kyllian</span>
       </h1>
       <p class="hero-sub">
-        Étudiant en 1ère année de BUT Informatique, passionné par le développement logiciel, l'algorithmique et l'administration système. Je construis des solutions robustes, du code bas-niveau C jusqu'aux interfaces web responsive.
+        Étudiant en 1ère année de BUT Informatique, passionné par le développement logiciel, l'algorithmique et l'administration système. Je construis des solutions robustes, du code bas-niveau C jusqu'aux interfaces web, et <strong>je souhaite être alternant en deuxième année</strong> pour mettre mes compétences au service d'une entreprise.
       </p>
       <div class="hero-cta">
         <button class="btn btn-primary" onclick="showPage('skills')">Voir mes compétences →</button>
@@ -789,7 +789,7 @@
       <p class="section-tag">// compétences</p>
       <h2 class="section-title">Ce que je sais faire</h2>
     </div>
-
+    
     <div class="skills-grid">
 
       <!-- ── C1 ── -->
@@ -927,7 +927,7 @@
         </div>
         <div class="skill-projects">
           <div class="project-item">SAE 1.03 — Chaîne de traitement de données conteneurisée pour le Ministère du Tourisme</div>
-          <div class="project-item">CSV→JSON, redimensionnement d'images, génération PDF via WeasyPrint</div>
+          <div class="project-item">CSV→JSON, redimensionnement d'images, génération PDF</div>
         </div>
         <button class="star-toggle" onclick="toggleStar(this)">
           <span class="btn-label">▸ Voir le contexte</span><span class="arrow">▾</span>
@@ -1167,7 +1167,29 @@
       <p class="section-tag">// à propos & contact</p>
       <h2 class="section-title">Qui suis-je ?</h2>
     </div>
+    <h3 style="font-family: var(--ff-display); color: var(--text); margin: 2.5rem 0 1rem; font-size: 1.6rem; border-bottom: 1px solid var(--border-soft); padding-bottom: 0.5rem;">Formation &amp; Diplômes</h3>
+        
+        <div style="margin-bottom: 1.5rem;">
+          <p style="font-size: 20px; margin-bottom: 0.4rem;"><strong style="color: var(--amber);">BUT Informatique</strong> — <span style=" font-size: 20px; font-style: italic; color: var(--muted);">Première année (En cours)</span></p>
+          <p style="font-size: 18px; color: var(--muted); margin-bottom: 0.75rem;">
+            Formation approfondie en développement, algorithmique complexe et administration système. Dans le cadre de ce cursus universitaire, <strong>je recherche activement une alternance pour ma deuxième année</strong>.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <a href="https://iut-lannion.univ-rennes.fr/" target="_blank" style="font-family: var(--ff-mono); font-size: 11px; color: var(--amber); text-decoration: none; border: 1px solid var(--border); padding: .4rem .8rem; border-radius: 6px; background: var(--amber-pale); transition: all 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+              IUT de Lannion ↗
+            </a>
+            <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank" style="font-family: var(--ff-mono); font-size: 11px; color: var(--amber); text-decoration: none; border: 1px solid var(--border); padding: .4rem .8rem; border-radius: 6px; background: var(--amber-pale); transition: all 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+              Programme National du BUT ↗
+            </a>
+          </div>
+        </div>
 
+        <div style="margin-bottom: 2rem;">
+          <p style="margin-bottom: 0.4rem; font-size: 20px;"><strong style="color: var(--text);">Baccalauréat Général</strong> — <span style="font-style: italic; color: var(--muted);">Obtenu</span></p>
+          <p style="font-size: 20px; color: var(--muted);">
+            Spécialités <strong>Mathématiques</strong> et <strong>Numérique et Sciences Informatiques (NSI)</strong>.
+          </p>
+        </div>
     <div class="about-grid">
       <div class="about-text">
         <p>Je suis étudiant en <strong>1ère année de BUT Informatique</strong>, une formation professionnalisante qui m'a permis de toucher à tous les piliers du métier de développeur : du code bas-niveau en C jusqu'à l'administration système sous Docker, en passant par la gestion de base de données et le développement web.</p>
@@ -1178,15 +1200,15 @@
           "Passionné par l'algorithmique, je ne m'arrête pas au code qui fonctionne — j'analyse la complexité, je compare les approches et je cherche systématiquement à optimiser."
         </div>
 
-        <p>En dehors des projets académiques, je me passionne pour la <strong>logique, la théorie des graphes</strong> et la création d'environnements de développement propres et reproductibles. Mon objectif à terme : intégrer une équipe où la rigueur technique et la curiosité intellectuelle sont valorisées.</p>
-
+        <p>En dehors des projets académiques, je me passionne pour le <strong>sport, plus particulièrement le foot</strong></p>
+        
         <div class="skills-quick">
           <span>C</span><span>Python</span><span>SQL</span><span>HTML/CSS</span>
           <span>Bash</span><span>PHP</span><span>Docker</span><span>Git</span>
           <span>PostgreSQL</span><span>Figma</span><span>Tutorial D</span>
         </div>
       </div>
-
+      
       <div>
         <div class="contact-card">
           <p class="contact-label">// me contacter</p>
@@ -1204,7 +1226,16 @@
             <textarea rows="5" placeholder="Bonjour, je souhaitais vous contacter au sujet de…"></textarea>
           </div>
           <button class="btn btn-primary" style="width:100%; justify-content:center; margin-top:.5rem" onclick="handleSend()">Envoyer le message →</button>
-
+          <div class="contact-links" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <a class="contact-link" href="mailto:valletkyllian@gmail.com" style="display: inline-flex; align-items: center; gap: 0.75rem; justify-content: flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--amber);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              valletkyllian@gmail.com
+            </a>
+            <a class="contact-link" href="tel:0766588244" style="display: inline-flex; align-items: center; gap: 0.75rem; justify-content: flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--amber);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              07 66 58 82 44
+            </a>
+          </div>
           <div class="contact-links" style="margin-top:1.5rem">
             <a class="contact-link" href="www.linkedin.com/in/kyllian-vallet-b199a3394">
               <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
